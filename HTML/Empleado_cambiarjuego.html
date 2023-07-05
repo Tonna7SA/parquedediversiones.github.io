@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Juego</title>
+    <link rel="shortcut icon" href="../IMG/Mosqueteros.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+</head>
+
+<body>
+
+     <nav>
+        <div id="logo" ></div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li>
+                <label for="drop-1" class="toggle">Querys +</label>
+                <a>Querys</a>
+                <input type="checkbox" id="drop-1" />
+                <ul>
+                    <li><a href="./listadosQuery.html">Lista</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="drop-1" class="toggle">Compradores +</label>
+                <a>Compradores</a>
+                <input type="checkbox" id="drop-1" />
+                <ul>
+                    <li><a href="./comprador_form.html">Registrar</a></li>
+                    <li><a href="./comprador_list.html">Listar</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <label for="drop-2" class="toggle">Empleados +</label>
+                <a>Empleados</a>
+                <input type="checkbox" id="drop-2" />
+                <ul>
+                    <li><a href="./empleados_form.html">Registrar</a></li>
+                    <li><a href="./empleados_list.html">Listar</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <label for="drop-2" class="toggle">Juegos +</label>
+                <a>Juegos</a>
+                <input type="checkbox" id="drop-2" />
+                <ul>
+                    <li><a href="./juegos_form.html">Registrar</a></li>
+                    <li><a href="./juegos_list.html">Listar</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <label for="drop-2" class="toggle">Usuarios +</label>
+                <a>Usuarios</a>
+                <input type="checkbox" id="drop-2" />
+                <ul><li><a href="./usuarios_form.html">Registar</a></li>
+                    <li><a href="./usuarios_list.html">Listar</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <label for="drop-2" class="toggle">Ventas +</label>
+                <a>Ventas</a>
+                <input type="checkbox" id="drop-2" />
+                <ul>
+                    <li><a href="./registro_ventas_form.html">Realizar Venta</a></li>
+                    <li><a href="./ventas_list.html">Listar Ventas</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <label for="drop-2" class="toggle">Perfil +</label>
+                <a>Perfil</a>
+                <input type="checkbox" id="drop-2" />
+                <ul>
+                    <li><a href="./usuarios_modificar.html">Editar Datos</a></li>
+                    <li><a href="./pass_modificar.html">Cambiar Pass</a></li>
+                    <li><a href="./foto_modificar.html">Cambiar Foto</a></li>
+                    <li><a>Cerrar Sesión</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="./login.html">Logueate</a>
+            </li>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <img src="../IMG/Luisina.jpg" 
+                alt="Imagen de perfil" class="fotito" >
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="contenedorregistro">
+
+        <form class="form" method="POST">
+            <span class="signup">Modificar Juego</span>
+            <input hidden type="number" name="legajoDni" class="form--input">
+            <input type="text" name="nombreUsuario" class="form--input" readonly>
+
+            <label class="palabrainput" style="font-size: 12px;" for="name">Selecciones juego a asignar</label>
+            <div>
+                <select class="form--input" style="width: 385px; height: 40px;" name="idJuego">
+                    <option>Seleccionar Juego</option>
+                    <option>
+                    </option>
+                </select>
+            </div>
+            
+            <button id="btnModal" class="form--submit">
+                Modificar
+            </button>
+
+
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Información</h2>
+                    <p>Este es el contenido del modal.</p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="contenedor">
+
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1" />
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1" />
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff" />
+            </g>
+        </svg>
+
+
+    </div>
+
+    <script src="/JS/carrusel.js"></script>
+    <script src="/JS/formularioFoto.js"></script>
+    <script src="/JS/calcularFecha.js"></script>
+    <script src="/JS/modal.js"></script>
+    <script>
+        function calcularEdad() {
+            var fechaNacimiento = new Date(document.getElementById("fecha_nacimiento").value);
+            var hoy = new Date();
+            var edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+            var mes = hoy.getMonth() - fechaNacimiento.getMonth();
+            if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+                edad--;
+            }
+            document.getElementById("edad").value = edad;
+        }
+    </script>
+    <script>
+        calculate(); // Llamar a la función calculate al cargar la página
+    </script>
+
+</body>
+
+</html>
